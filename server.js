@@ -1,13 +1,19 @@
 var express = require ('express');
+const htmlRoutes = require('./routes/htmlroutes')
+const apiRoutes = require("./routes/apiroutes");
 
-var app = express(); 
+var app = express();
+var PORT = process.env.PORT || 8080;
 
-app.get('/',  (req, res)  => {
-    res.send('This is a test page, hell yeah');
-});
-app.get('/contact',  (req, res)  => {
-    res.send('This is a the contact page');
-});
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public"));
+//app.use('*', apiRoutes);
+
+app.use('/notes', htmlRoutes);
 
 
-app.listen(3001);
+app.listen(PORT, () => {
+    console.log(`App listening on PORT: ${PORT}`);
+  });
