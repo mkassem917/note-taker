@@ -1,6 +1,6 @@
-let noteTitle;
-let noteText;
-let saveNoteBtn;
+let noteTitle = getElementsByClassName("note-title");
+let noteText = getElementsByClassName("note-textarea");
+//let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
