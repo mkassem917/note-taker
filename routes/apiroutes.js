@@ -1,13 +1,13 @@
 const notesDataStore = require('../db/dataStore');
 const fs = require("fs");
 const {v4: uuidv4} = require("uuid");
-// const express = require('express');
+
 
 
 
 module.exports = (app) => {
 
-    // READ
+ // Read
 app.get("/api/notes", (req, res) => {
     fs.readFile("db.json", "utf8", (err, data) => {
         if (err) {

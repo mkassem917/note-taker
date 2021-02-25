@@ -1,8 +1,3 @@
-// const fs = require('fs')
-// const util = require('util');
-
-
-
 
 let dataStoreArray = [
     {
@@ -15,6 +10,8 @@ let dataStoreArray = [
 module.exports = dataStoreArray;
 
 
+// const fs = require('fs')
+// const util = require('util');
 
 // fs.writeFileSync("./db.json", JSON.stringify(dataStoreArray), (_err) => {
 //     if (error)

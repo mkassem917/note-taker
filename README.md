@@ -1,32 +1,35 @@
   # License
   ![GitHub License](https://img.shields.io/badge/License-mit-blue.svg)
 
-# README - GENERATOR
-Week 9 Homework - README
+# Note Taker
+Week 11 Homework - README
 
-Link:  https://mkassem917.github.io/readme-generator/
+Link:  https://mkassem917.github.io/note-taker/
 
-Video: https://drive.google.com/file/d/14gBVbiGulGv_RM4vbxJxKOroazR69n0Q/view
+Heroku Link: https://afternoon-hamlet-38292.herokuapp.com/
 
-## Example of working code
+## Screenshots
 
-![Project # 9 README GENERATOR](https://user-images.githubusercontent.com/74279957/107312757-23cce500-6a5f-11eb-9636-5f73a1161654.gif)
+![note-taker](/public/assets/note_taker_home.png)
+![note-taker](/public/assets/note_taker_notes.png)
 
 
 **Description**
 
-This is a README Generator
+This is a Note Taker
 
-* Use Node.js to create a README.md file
-* Allows the developer to commit more time on projects and less time on creating a README.md file
+The Note Taker Generator is running  on a server application that takes input from the user and creates notes.
+
+ Before running the application the user must perform an npm install to install all required dependencies.
 
 
 **Contents:**
 
 * index.html
-* utils - generateMarkdown.js 
+* notes.html
+* db folder
 * License
-* assets  folder - Contains screenshots & gif
+* assets  folder - Contains screenshots
 * README.md
 
 **Tools Used:**
@@ -36,5 +39,5 @@ This is a README Generator
 * Stackoverflow
 * npm.js
 * nodejs.org
-* process.cwd() Method from geeksforgeeks.org 
+* expressjs
  
