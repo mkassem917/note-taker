@@ -1,6 +1,6 @@
-let noteTitle = getElementsByClassName("note-title");
-let noteText = getElementsByClassName("note-textarea");
-//let saveNoteBtn;
+let noteTitle; //getElementsByClassName("note-title");
+let noteText; //getElementsByClassName("note-textarea");
+let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
@@ -51,11 +51,9 @@ const deleteNote = (id) =>
   });
 
 const renderActiveNote = () => {
-  hide(saveNoteBtn);
+  (saveNoteBtn);
 
   if (activeNote.id) {
-    noteTitle.setAttribute('readonly', true);
-    noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
   } else {
